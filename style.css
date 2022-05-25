@@ -34,8 +34,8 @@ body::after {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  font-size: 1.2rem;
-  opcity: 0;
+  font-size: 2.2rem;
+  opacity: 0;
 }
 
 .title.active {
@@ -51,18 +51,19 @@ section {
   z-index: 1;
 }
 
-/img-wrap {
+.img-wrap {
   position: relative;
   top: 40%;
   width: 1px;
+  height: 40%;
   overflow: hidden;
-  opcity: 0;
+  opacity: 0;
 }
 
-.img.wrap.active {
+.img-wrap.active {
   width: 40vw;
   opacity: 1;
-  transition: opasity 1s, width 2s;
+  transition: opacity 1s, width 2s;
 }
 
 .img {
@@ -76,8 +77,8 @@ section {
   transform: scale(1.6);
 }
 
-.img-wrap.title.active > .img {
-  trasform: scale(1);
+.img-wrap.active > .img {
+  transform: scale(1);
   transition: 1s ease-out;
 }
 
@@ -88,7 +89,7 @@ h2 {
   z-index: 2;
   letter-spacing: 2px;
   opacity: 0;
-  transition: all 0.2s;
+  transition: 0.2s;
 }
 
 h2.active {
